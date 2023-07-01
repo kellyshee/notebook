@@ -1,0 +1,52 @@
+---
+title: "Statistics"
+format: pdf
+editor: visual
+---
+
+I will use **sample mean** $\bar{x}$ **and standard deviation** $s$ throughout the book. If there is a different formula for calculating a population's parameters, I will use $\mu$ and $\sigma$.
+
+## Ch. 1 Describing Data: Graphical
+
++-------------+----------------+---------------------------------------------+
+| data        | type           | definition                                  |
++=============+================+=============================================+
+| categorical | **nominal**    | NAME (from nomen-)                          |
+|             |                |                                             |
+|             |                | no meaning if you order them                |
++-------------+----------------+---------------------------------------------+
+|             | **ordinal**    | ORDER                                       |
+|             |                |                                             |
+|             |                | satisfaction levels: 1 - 5 or awful - great |
++-------------+----------------+---------------------------------------------+
+| numerical   | **discrete**   | price you bought a good at                  |
++-------------+----------------+---------------------------------------------+
+|             | **continuous** | fluid range of numbers                      |
++-------------+----------------+---------------------------------------------+
+
+You want to create a frequency distribution table with this data: 12, 13, 17, 21, 24, 24, 26, 27, 27, 30, 32, 35, 37, 38, 41, 43, 44, 46, 53, 58. How do you determine the **width of the intervals**?
+
+1.  range = max - min = 58 - 12 = 46
+2.  Select number of classes (usually between 5 and 15). In this case, 5.
+3.  46/5 = 9.2 = 10
+
+These are your intervals: 10 - 20, 20 - 30, 30 - 40, 40 - 50, 50 - 60. You can now create a frequency table. This is the general formula: $$ w = \frac {max - min}{classes} $$
+
+## Ch. 2 Using Numerical Measures to Describe Data
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
